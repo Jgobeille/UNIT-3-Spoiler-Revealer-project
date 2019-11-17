@@ -1,9 +1,9 @@
-$(".spoiler").on("click", "button", () => {
+$(".spoiler").on("click", "button", e => {
   const button = $(".spoiler button");
   //show the spoiler text
-  span.show();
+  //   span.show();
   //hide the "Reveal Spoiler" Button
-  button.hide();
+  $(e.target).hide();
 });
 //create the "Reveal Spoiler" button
 const $button = $("<button>Reveal Spoiler</button>");
