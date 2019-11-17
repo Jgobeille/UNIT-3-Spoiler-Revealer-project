@@ -1,9 +1,12 @@
 $(".spoiler").on("click", "button", e => {
-  const button = $(".spoiler button");
   //show the spoiler text
-  //   span.show();
+  this.target = e.target;
+
+  $(this.target)
+    .prev()
+    .show();
   //hide the "Reveal Spoiler" Button
-  $(e.target).hide();
+  $(this.target).hide();
 });
 //create the "Reveal Spoiler" button
 const $button = $("<button>Reveal Spoiler</button>");
